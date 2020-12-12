@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "dictionary-tryhard",
+    "name": "Jisho",
+    "icon": "./assets/app_icon.png",
     "slug": "dictionary-tryhard",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/favicon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -14,19 +14,21 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
-      "**/*"
+      "assets/**"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "io.x666c.jisho"
     },
     "android": {
+      "icon": "./assets/app_icon.png",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "foregroundImage": "./assets/app_icon.png",
+        "backgroundColor": "#3CDC00"
+      },
+      "package": "io.x666c.jisho",
+      "versionCode": 3
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "web": {}
   }
 }
